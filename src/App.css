@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+html {
+	-ms-touch-action: manipulation;	/* IE10  */
+	touch-action: manipulation;		/* IE11+ */
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.App, body, #root, html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+  width: 100%;
+  padding: 20px;
+  background-color: blueviolet;
+}
+
+.StopWatch {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  background: linear-gradient(0deg, rgb(183, 201, 78), rgb(62, 212, 255));
+}
+
+.stopWatch_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+
+  max-width: 500px;
+  width: 90%;
+  height: 300px;
+
+  border-radius: 15px;
+  background-color: white;
+}
+
+/* .StopWatch-timer {
+  margin-bottom: 20px;
+} */
+.StopWatch-timer span {
+  border: 2px solid brown;
+  border-radius: 10px;
+  padding: 15px;
+
+  font-size: 25px;
+  margin: 10px;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.button-wrapper button {
+  margin: 10px;
+  background-color: white;
+
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.contactMe {
+  margin-top: 10px;
+}
+ul {
+  list-style: none;
+  display: flex;
+}
+ul li {
+  margin-right: 10px;
+}
+ul li:last-child {
+  margin-right: 0px;
+}
+ul li a {
+  text-decoration: none; 
+  color: rgb(40, 148, 181);
+}
+
+/* btn style */
+.start-btn {
+  border: 2px solid blueviolet;
+  color: blueviolet;
+  transition: background .5s;
+}
+.start-btn:hover {
+  color: white;
+  background-color: blueviolet;
+}
+
+.Stop-btn {
+  border: 2px solid rgb(226, 43, 43);
+  color: rgb(226, 43, 43);
+  transition: background .5s;
+}
+.Stop-btn:hover {
+  color: white;
+  background-color: rgb(226, 43, 43);
+}
+
+.Wait-btn {
+  border: 2px solid rgb(217, 226, 43);
+  color: rgb(217, 226, 43);
+  transition: background .5s;
+}
+.Wait-btn:hover {
+  color: white;
+  background-color: rgb(217, 226, 43);
+}
+
+.Reset-btn {
+  border: 2px solid rgb(170, 170, 170);
+  color: rgb(170, 170, 170);
+  transition: background .5s;
+}
+.Reset-btn:hover {
+  color: white;
+  background-color: rgb(170, 170, 170);
+}
